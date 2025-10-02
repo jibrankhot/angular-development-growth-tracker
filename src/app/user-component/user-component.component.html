@@ -1,0 +1,18 @@
+<div class="user-details" style="padding: 2rem;">
+    <div class="col-xl-12" style="padding: 1rem;">
+        <label for="username">Enter User Name</label>
+    </div>
+
+    <div class="col-xl-12" style="padding: 1rem;">
+        <input type="text" id="username" name="username" #username>
+    </div>
+
+    <div class="col-xl-12" style="padding: 1rem;">
+        <button class="btn btn-primary" (click)="changeName(username.value)">Change Name</button>
+    </div>
+
+    <div class="col-xl-12" style="padding: 1rem;">
+        <h2> Old Name : {{ oldName }}</h2>
+        <h2>New Name : {{ newName }}</h2>
+    </div>
+</div>
